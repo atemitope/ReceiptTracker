@@ -1,7 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 export default class App extends Component {
-  render(){
+  render() {
     const styles = require('./Home.scss');
     return (
       <div>
