@@ -22,5 +22,27 @@
 .search {
   float:right;
   width: 500px !important;
-  margin-right: 130px;
+  /*margin-right: 130px;*/
+}
+
+.list-group-item{
+  width: 60px;
+  border-radius: 0px !important;
+}
+
+.receipt-summary {
+  width: 50px;
+}
+
+.summaries{
+  background: #337ab7;
+}
+
+.receipt-detail {
+  /*margin-right: 130px !important;*/
+}
+
+.app {
+  margin-left:100px !important;
+  margin-right:100px !important;
 }
