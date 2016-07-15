@@ -1,0 +1,12 @@
+.navbar {
+  border-radius: 0px;
+}
+
+.logo img {
+  /*width: 35px;*/
+  margin-top: -5px;
+}
+
+.brand-name {
+  margin-top: 3px;
+}
