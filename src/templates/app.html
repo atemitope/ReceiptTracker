@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Andela Receipt Tracker</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-      <link rel="stylesheet" href="style.css">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="logo navbar-brand" href="#">
-        <img height=35 width=35 src="../../static/andela.png" alt="Andela">
-      </a>
-      <a class="brand-name navbar-brand" href="#">Andela Receipt Tracker</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">
-          Logged in as user
-          <img height=35 width=35 src="../../static/user.png" alt="Andela">
-        </a>
-        </li>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
+<head>
+	<meta charset="utf-8">
+	<title>Andela Receipt Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="logo navbar-brand" href="#">
+					<img height=35 width=35 src="../../static/andela.png" alt="Andela">
+				</a>
+				<a class="brand-name navbar-brand" href="#">Andela Receipt Tracker</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">
+              Logged in as user
+              <img height=35 width=35 src="../../static/user.png" alt="Andela">
+            </a>
+					</li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<p class="app-heading">Listing my Receipts</p>
+		<div class="input-group pull-right search">
+			<input type="text" class="form-control" placeholder="Search receipt">
+			<div class="input-group-btn">
+				<button class="btn btn-primary">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+				<button class="btn btn-success">
+          <span class="glyphicon glyphicon-plus"></span> Add new
+        </button>
+			</div>
+		</div>
+
+	</div>
 
 
-  </body>
+</body>
+
 </html>

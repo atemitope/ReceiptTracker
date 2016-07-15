@@ -10,3 +10,17 @@
 .brand-name {
   margin-top: 3px;
 }
+
+.app-heading {
+  font-size: 20px !important;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.search {
+  float:right;
+  width: 500px !important;
+  margin-right: 130px;
+}
