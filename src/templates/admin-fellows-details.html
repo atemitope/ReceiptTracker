@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Andela Receipt Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid app">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="logo navbar-brand" href="#">
+                  <img height=35 width=35 src="../../static/andela.png" alt="Andela">
+              </a>
+              <a class="brand-name navbar-brand" href="#">Andela Receipt Tracker</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">
+            Logged in as user
+            <img height=35 width=35 src="../../static/user.png" alt="Andela">
+          </a>
+                  </li>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="container-fluid app">
+    <p><span class="glyphicon glyphicon-triangle-left" color="blue" aria-hidden="true"></span>Back to All Fellows</p>
+    <div class="input-group pull-right search">
+      <input type="text" class="form-control" placeholder="Search receipt">
+      <div class="input-group-btn">
+        <button class="btn btn-primary">
+        <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <p class="app-heading">Fellow's Details</p>
+    <table class="table receipt-detail">
+      <thead>
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Total</th>
+            <th>Balance</th>
+            <th>Status</th>
+            <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Olufunmilade Oshodi</td>
+          <td>New York</td>
+          <td>$120.00</td>
+          <td>$15.00</td>
+          <td class="pending">Pending <span class="caret"></span></td>
+          <td class="activity">Updated Jun, 2016</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table receipt-detail">
+      <tbody>
+        <tr>
+          <td class="cell-table-left">
+            <table class="table table-hover fellow-details">
+              <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Biscuit</td>
+                  <td>Feeding</td>
+                  <td>$2.00</td>
+                  <td>11 Jul</td>
+                </tr>
+                <tr>
+                  <td>Bus Ticket</td>
+                  <td>Transport</td>
+                  <td>$3.00</td>
+                  <td>11 Jul</td>
+                </tr>
+                <tr>
+                  <td>Pizza</td>
+                  <td>Feeding</td>
+                  <td>$5.00</td>
+                  <td>11 Jul</td>
+                </tr>
+                <tr>
+                  <td>Ciroc Vodka</td>
+                  <td>Feeding</td>
+                  <td>$15.00</td>
+                  <td>11 Jul</td>
+                </tr>
+                <tr>
+                  <td>Biscuit</td>
+                  <td>Feeding</td>
+                  <td>$2.00</td>
+                  <td>11 Jul</td>
+                </tr>
+                <tr>
+                  <td>Train Ticket</td>
+                  <td>Transport</td>
+                  <td>$4.00</td>
+                  <td>11 Jul</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+
+          <td class="cell-table-right"><img style="max-width: 100%; height: auto" src="../../static/user.png" /></td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+  </div>
+
+
+</body>
+
+</html>

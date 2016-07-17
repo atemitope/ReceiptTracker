@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Andela Receipt Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid app">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="logo navbar-brand" href="#">
+					<img height=35 width=35 src="../../static/andela.png" alt="Andela">
+				</a>
+				<a class="brand-name navbar-brand" href="#">Andela Receipt Tracker</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">
+              Logged in as user
+              <img height=35 width=35 src="../../static/user.png" alt="Andela">
+            </a>
+					</li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid app">
+		<p class="app-heading">Listing all Fellows</p>
+		<div class="input-group pull-right search">
+			<input type="text" class="form-control" placeholder="Search receipt">
+			<div class="input-group-btn">
+				<button class="btn btn-primary">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+			</div>
+		</div>
+    <br>
+    <br>
+    <table class="table table-bordered receipt-summary">
+      <tbody>
+        <tr>
+            <td class="summaries">sort</td>
+            <td class="filter">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" id="filter_by" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Name
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="filter_by">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </td>
+            <td class="filter">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" id="filter_by" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Ascending
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="filter_by">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table receipt-detail">
+      <thead>
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Total</th>
+            <th>Balance</th>
+            <th>Status</th>
+            <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Olufunmilade Oshodi</td>
+          <td>New York</td>
+          <td>$120.00</td>
+          <td>$15.00</td>
+          <td class="pending">Pending <span class="caret"></span></td>
+          <td class="activity">Updated Jun, 2016</td>
+        </tr>
+        <tr>
+          <td>Uzo Awili</td>
+          <td>New York</td>
+          <td>$500.00</td>
+          <td>$20.00</td>
+          <td class="refunded">Refunded <span class="caret"></span></td>
+          <td class="activity">Updated Jun, 2016</td>
+        </tr>
+        <tr>
+          <td>Dipo Isola</td>
+          <td>Texas</td>
+          <td>$150.00</td>
+          <td>$10.00</td>
+          <td class="refunded">Refunded <span class="caret"></span></td>
+          <td class="activity">Updated Jun, 2016</td>
+        </tr>
+        <tr>
+          <td>Adesanya Tosin</td>
+          <td>Uganda</td>
+          <td>$130.00</td>
+          <td>$30.00</td>
+          <td class="pending">Pending <span class="caret"></span></td>
+          <td class="activity">Added Jun, 2016</td>
+        </tr>
+        <tr>
+          <td>Daniel James</td>
+          <td>India</td>
+          <td>$100.00</td>
+          <td>$5.00</td>
+          <td class="refunded">Refunded <span class="caret"></span></td>
+          <td class="activity">Added Jun, 2016</td>
+        </tr>
+        <tr>
+          <td>Osmand Oranagwa</td>
+          <td>Sambisa</td>
+          <td>$120.00</td>
+          <td>$20.00</td>
+          <td class="pending">Pending <span class="caret"></span></td>
+          <td class="activity">Updated Jun, 2016</td>
+        </tr>
+        <tr>
+          <td>Olaide Ojewale</td>
+          <td>Ethiopia</td>
+          <td>$100.00</td>
+          <td>$80.00</td>
+          <td class="refunded">Refunded <span class="caret"></span></td>
+          <td class="activity">Updated Jun, 2016</td>
+        </tr>
+      </tbody>
+    </table>
+
+	</div>
+
+
+</body>
+
+</html>
