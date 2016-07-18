@@ -3,7 +3,6 @@
 }
 
 .logo img {
-  /*width: 35px;*/
   margin-top: -5px;
 }
 
@@ -38,8 +37,16 @@
   background: #337ab7;
 }
 
-.receipt-detail {
-  /*margin-right: 130px !important;*/
+.form-control {
+  border-radius: 0px !important;
+}
+
+.modal-content {
+  border-radius: 0px !important;
+}
+
+.modal-footer {
+  text-align: center;
 }
 
 .app {

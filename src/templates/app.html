@@ -6,6 +6,7 @@
 	<title>Andela Receipt Tracker</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
@@ -45,68 +46,113 @@
 					<button class="btn btn-primary">
 						<span class="glyphicon glyphicon-search"></span> Search
 					</button>
-					<button class="btn btn-success">
+					<button class="btn btn-success" data-toggle="modal" data-target="#receiptModal">
 						<span class="glyphicon glyphicon-plus"></span> Add new
 					</button>
+					<!-- Modal -->
 				</div>
 			</div>
-		</div>
-    <!-- <br>
-    <br> -->
-		<div class="container">
-			<table class="table table-bordered receipt-summary">
-	      <tbody>
-	        <tr>
-	            <td class="summaries">Total</td>
-	            <td>$150.00</td>
-	            <td class="summaries">Bal</td>
-	            <td>$20</td>
-	        </tr>
-	      </tbody>
-	    </table>
-	    <table class="table table-bordered receipt-detail">
-	      <thead>
-	        <tr>
-	            <th>Name</th>
-	            <th>Category</th>
-	            <th>Activity</th>
-	        </tr>
-	      <tbody>
-	        <tr>
-	          <td>Biscuit</td>
-	          <td>Feeding</td>
-	          <td>Added Jun,2016 <button class="btn btn-primary pull-right">
-	            <span class="glyphicon glyphicon-pencil"></span></button></td>
-	        </tr>
-	        <tr>
-	          <td>Biscuit</td>
-	          <td>Feeding</td>
-	          <td>Added Jun,2016 <button class="btn btn-primary pull-right">
-	            <span class="glyphicon glyphicon-pencil"></span></button></td>
-	        </tr>
-	        <tr>
-	          <td>Biscuit</td>
-	          <td>Feeding</td>
-	          <td>Added Jun,2016 <button class="btn btn-primary pull-right">
-	            <span class="glyphicon glyphicon-pencil"></span></button></td>
-	        </tr>
-	        <tr>
-	          <td>Biscuit</td>
-	          <td>Feeding</td>
-	          <td>Added Jun,2016 <button class="btn btn-primary pull-right">
-	            <span class="glyphicon glyphicon-pencil"></span></button></td>
-	        </tr>
-	        <tr>
-	          <td>Biscuit</td>
-	          <td>Feeding</td>
-	          <td>Added Jun,2016 <button class="btn btn-primary pull-right">
-	            <span class="glyphicon glyphicon-pencil"></span></button></td>
-	        </tr>
-	      </tbody>
-	    </table>
+			<div class="container">
+				<div class="modal fade container" id="receiptModal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Add New Item</h4>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Name">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Category">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Amount">
+									</div>
+									<div class="form-group input-group">
+										<input type="text" class="form-control" placeholder="Receipt">
+										<span class="input-group-btn">
+											<label class="btn btn-primary btn-file">
+												Browse
+												<input type="file" style="display: none;">
+											</label>
+      							</span>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-success" data-dismiss="modal">ADD ITEM</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<table class="table-responsive table table-bordered receipt-summary">
+					<tbody>
+						<tr>
+							<td class="summaries">Total</td>
+							<td>$150.00</td>
+							<td class="summaries">Bal</td>
+							<td>$20</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-responsive table-bordered receipt-detail">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Category</th>
+							<th>Activity</th>
+						</tr>
+						<tbody>
+							<tr>
+								<td>Biscuit</td>
+								<td>Feeding</td>
+								<td>Added Jun,2016
+									<button class="btn btn-primary pull-right">
+										<span class="glyphicon glyphicon-pencil"></span></button>
+								</td>
+							</tr>
+							<tr>
+								<td>Biscuit</td>
+								<td>Feeding</td>
+								<td>Added Jun,2016
+									<button class="btn btn-primary pull-right">
+										<span class="glyphicon glyphicon-pencil"></span></button>
+								</td>
+							</tr>
+							<tr>
+								<td>Biscuit</td>
+								<td>Feeding</td>
+								<td>Added Jun,2016
+									<button class="btn btn-primary pull-right">
+										<span class="glyphicon glyphicon-pencil"></span></button>
+								</td>
+							</tr>
+							<tr>
+								<td>Biscuit</td>
+								<td>Feeding</td>
+								<td>Added Jun,2016
+									<button class="btn btn-primary pull-right">
+										<span class="glyphicon glyphicon-pencil"></span></button>
+								</td>
+							</tr>
+							<tr>
+								<td>Biscuit</td>
+								<td>Feeding</td>
+								<td>Added Jun,2016
+									<button class="btn btn-primary pull-right">
+										<span class="glyphicon glyphicon-pencil"></span></button>
+								</td>
+							</tr>
+						</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
-
 
 </body>
 
