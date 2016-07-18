@@ -49,7 +49,7 @@
 					<button class="btn btn-success" data-toggle="modal" data-target="#receiptModal">
 						<span class="glyphicon glyphicon-plus"></span> Add new
 					</button>
-					<!-- Modal -->
+					<!-- Create Receipt Modal -->
 				</div>
 			</div>
 			<div class="container">
@@ -84,7 +84,21 @@
 								</form>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-success" data-dismiss="modal">ADD ITEM</button>
+								<button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#confirmationModal">ADD ITEM</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Receipt create confirmation modal -->
+				<div class="modal fade container modal-sm" id="confirmationModal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-body modal-sm">
+								<span class="glyphicon glyphicon-ok-sign confirmation"></span>
+								<p>ITEM ADDED!</p>
+								<button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
 							</div>
 						</div>
 

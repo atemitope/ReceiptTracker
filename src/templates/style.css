@@ -45,8 +45,13 @@
   border-radius: 0px !important;
 }
 
-.modal-footer {
+.modal-footer, .modal-body {
   text-align: center;
+}
+
+.confirmation {
+  font-size: 150px;
+  color: green;
 }
 
 .app {
