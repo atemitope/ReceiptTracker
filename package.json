@@ -9,11 +9,14 @@
     "start-prod-api": "better-npm-run start-prod-api",
     "build": "better-npm-run build",
     "postinstall": "npm run build",
-    "lint": "eslint -c .eslintrc src api",
+    "eslint": "eslint -c .eslintrc src",
+    "stylelint": "stylelint --config .csslintrc \"src/**/*.scss\"",
+    "lint": "npm run eslint && npm run stylelint",
     "start-dev": "better-npm-run start-dev",
     "watch-client": "better-npm-run watch-client",
     "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run start-dev\"",
-    "test": "mocha \"src/**/**/*.test.js\" --require test/setup.js"
+    "test": "mocha \"src/**/**/*.test.js\" --require test/setup.js",
+    "coverage": "istanbul cover _mocha  \"src/**/**/*.test.js\" --require test/setup.js"
   },
   "repository": {
     "type": "git",
@@ -86,6 +89,7 @@
     "hoist-non-react-statics": "^1.0.3",
     "http-proxy": "^1.12.0",
     "invariant": "^2.2.0",
+    "istanbul": "^0.4.4",
     "jsdom": "^9.4.1",
     "less": "^2.5.3",
     "less-loader": "^2.2.1",
@@ -111,6 +115,8 @@
     "serve-favicon": "^2.3.0",
     "socket.io": "^1.3.7",
     "socket.io-client": "^1.3.7",
+    "stylelint": "^7.0.3",
+    "stylelint-scss": "^1.2.1",
     "superagent": "^1.4.0",
     "url-loader": "^0.5.7",
     "warning": "^2.1.0",

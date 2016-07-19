@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {DangerButton, SuccessButton} from 'components';
+import {DangerButton, SuccessButton} from '../../components';
 
 export default class App extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class App extends Component {
       The reciept apps
       </p>
       <DangerButton message="this is a danger button" />
-      <SuccessButton message="this is a danger button"/>
+      <SuccessButton message="this is a success button"/>
 
       </div>
       );

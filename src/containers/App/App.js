@@ -8,7 +8,9 @@ export default class App extends Component {
     const styles = require('./App.scss');
     return ( < div >
       <p className = { styles.header } >
-      Hello and welcome to the reciept tracker app < /p> { this.props.children } </div>
-      );
+      Hello and welcome to the reciept tracker app < /p>
+      { this.props.children }
+      </div>
+    );
   }
 }
