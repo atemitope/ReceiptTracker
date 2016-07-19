@@ -4,17 +4,6 @@
   "description": "An andela reciept tracker to be used by andeleans",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com-andela-ashuaib:andela-atemitope/ReceiptTracker.git"
-  },
-  "keywords": [
-    "Receipt",
-    "tracker"
-  ],
-    "scripts": {
     "start": "concurrent --kill-others \"npm run start-prod\" \"npm run start-prod-api\"",
     "start-prod": "better-npm-run start-prod",
     "start-prod-api": "better-npm-run start-prod-api",
@@ -24,15 +13,21 @@
     "start-dev": "better-npm-run start-dev",
     "watch-client": "better-npm-run watch-client",
     "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run start-dev\"",
-    "test": "karma start",
-    "test-node": "./node_modules/mocha/bin/mocha $(find api -name '*-test.js') --compilers js:babel-core/register",
-    "test-node-watch": "./node_modules/mocha/bin/mocha $(find api -name '*-test.js') --compilers js:babel-core/register --watch"
+    "test": "mocha \"src/**/**/*.test.js\" --require test/setup.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-andela-ashuaib:andela-atemitope/ReceiptTracker.git"
+  },
+  "keywords": [
+    "Receipt",
+    "tracker"
+  ],
   "config": {
-   "ghooks": {
-       "pre-commit": "npm run lint"
-   }
- },
+    "ghooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "betterScripts": {
     "start-prod": {
       "command": "node ./bin/server.js",
@@ -68,7 +63,7 @@
       }
     }
   },
-    "dependencies": {
+  "dependencies": {
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.1",
     "babel-plugin-add-module-exports": "^0.1.2",
@@ -82,13 +77,16 @@
     "babel-register": "^6.3.13",
     "babel-runtime": "^6.3.19",
     "body-parser": "^1.14.1",
+    "chai": "^3.5.0",
     "compression": "^1.6.0",
+    "enzyme": "^2.4.1",
     "express": "^4.13.3",
     "express-session": "^1.12.1",
     "file-loader": "^0.8.5",
     "hoist-non-react-statics": "^1.0.3",
     "http-proxy": "^1.12.0",
     "invariant": "^2.2.0",
+    "jsdom": "^9.4.1",
     "less": "^2.5.3",
     "less-loader": "^2.2.1",
     "lru-memoize": "^1.0.0",
