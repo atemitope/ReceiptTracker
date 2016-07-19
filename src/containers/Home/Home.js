@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {DangerButton, SuccessButton} from '../../components';
 
-export default class App extends Component {
+export default class Home extends Component {
   render() {
     const styles = require('./Home.scss');
     return (

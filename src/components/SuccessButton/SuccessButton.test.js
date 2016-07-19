@@ -3,11 +3,11 @@ import {expect} from 'chai';
 import {shallow, mount} from 'enzyme';
 import SuccessButton from './SuccessButton';
 
-describe('SuccessButton Component', function() {
-   it("contains class button of btn  ", function() {
+describe('SuccessButton Component', () => {
+   it("contains class button of btn  ", () => {
     expect(shallow(<SuccessButton />).is(".btn")).to.equal(true);
   });
-  it("contains class button of success ", function() {
+  it("contains class button of success ", () => {
     expect(shallow(<SuccessButton />).is(".btn-success")).to.equal(true);
   });
    it('to have the contained string', () => {
