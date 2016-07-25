@@ -1,0 +1,118 @@
+/*
+ * Colors
+ * ========================================================================== */
+
+$white-base:            hsl(255, 255, 255);
+$black:                 #000000;
+$gray-darker:           lighten($black, 13.5%); /* #222 */
+$gray-dark:             lighten($black, 25%);   /* #404040 */
+$gray:                  lighten($black, 33.5%); /* #555 */
+$gray-light:            lighten($black, 46.7%); /* #777 */
+$gray-lighter:          lighten($black, 66.7%); 
+$gray-lightest:         #E5E5E5;
+
+/*
+ * Typography
+ * ========================================================================== */
+
+$font-family-base:      "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$fs-s:                  10px;
+$fs-xxs:                11px;
+$fs-xs:                 12px;
+$fs-s:                  13px;
+$fs-sm:                 14px;
+$fs-m:                  16px;
+$fs-ml:                 19px;
+$fs-l:                  22px;
+$fs-xl:                 30px;
+$fw-light:              300;
+$fw-normal:             400;
+$fw-bold:               600;
+
+/*
+ * Margin
+ * ========================================================================== */
+$mg-xsm: 5px;
+$mg-sm: 10px;
+$mg-m: 15px;
+$mg-l: 20px;
+$mg-xl: 25px;
+$mg-xxl: 30px;
+$mg-section: 50px;
+
+/*
+ * Layout
+ * ========================================================================== */
+
+$max-content-width:     1000px;
+
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+
+$screen-xs-min:         480px;  /* Extra small screen / phone */
+$screen-sm-min:         768px;  /* Small screen / tablet */
+$screen-md-min:         992px;  /* Medium screen / desktop */
+$screen-lg-min:         1200px; /* Large screen / wide desktop */
+
+/*
+ * Animations
+ * ========================================================================== */
+
+$animation-swift-out:   .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;
+
+/*
+ * Z Indexes
+ * ========================================================================== */
+$navigationStepIndex: 1;
+$selectBoxIndex: 2;
+
+/*
+ * Colors
+ * ========================================================================== */
+
+$green: #02AE7C;
+$orange: #FFA800;
+$cruise: #B3E7D8;
+$silver: #BBBBBB;
+$danger-red: #DA4F49;
+$emperor: #555555;
+$astral: #337ab7;
+
+//Dashbaord colors
+$sidebar-btn-color: #666666;
+$sidebar-btn-hover-color: #000000;
+$sidebar-btn-active-color: #128d5a;
+$dash-bar-bg: #FFA800;
+$dash-bar-font: white;
+$dash-border: #FFA800;
+$sidebar-bg: $emperor;
+$sidebar-icon-hover: #FFA800;
+$sidebar-font: #FFFFFF;
+$primary-green: #02AE7C;
+
+
+/**
+ *  Define scss variables here.
+ *
+ *  Available options for Bootstrap:
+ *  http://getbootstrap.com/customize/
+ *
+ */
+
+// Custom Colors
+$cyan: #33e0ff;
+$humility: #777;
+
+// Bootstrap Variables
+$brand-primary: darken(#428bca, 6.5%);
+$brand-secondary: #e25139;
+$brand-success: #5cb85c;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$brand-info: #5bc0de;
+
+$text-color: #333;
+
+$font-size-base: 14px;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, sans-serif;

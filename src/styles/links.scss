@@ -1,0 +1,37 @@
+/*
+ * Links
+ * ========================================================================== */
+@import "variables.scss";
+
+.secondaryLink {
+  color: $orange;
+  margin: 0px 5px;
+  &:hover {
+    cursor: pointer;
+    color: $orange;
+  }
+}
+
+.grayLink {
+  color: $gray;
+  margin: 0px 5px;
+  &:hover, &a:hover {
+    cursor: pointer;
+    color: $orange;
+  }
+}
+
+.navLink {
+  border: 1px solid $orange;
+  color: $orange;
+  margin: 0px 5px;
+  transition: all ease-in-out .25s;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: #ffffff;
+    background: $orange !important;
+    outline: 0;
+  }
+}
+
