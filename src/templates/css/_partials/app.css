@@ -1,0 +1,59 @@
+.navbar {
+  border-radius: 0px;
+}
+
+.logo img {
+  margin-top: -5px;
+}
+
+.brand-name {
+  margin-top: 3px;
+}
+
+.app-heading {
+  font-size: 20px !important;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.search {
+  float: right;
+  width: 500px !important;
+}
+
+.list-group-item {
+  width: 60px;
+  border-radius: 0px !important;
+}
+
+.receipt-summary {
+  width: 50px;
+}
+
+.summaries {
+  background: #337ab7;
+}
+
+.form-control {
+  border-radius: 0px !important;
+}
+
+.modal-content {
+  border-radius: 0px !important;
+}
+
+.modal-footer, .modal-body {
+  text-align: center;
+}
+
+.confirmation {
+  font-size: 150px;
+  color: green;
+}
+
+.app {
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+}

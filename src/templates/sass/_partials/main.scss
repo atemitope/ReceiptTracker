@@ -1,8 +1,11 @@
+@import 'app';
+@import 'admin';
+
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
 body {
-  font: 100% $font-stack;
+  font: 130% $font-stack;
   color: $primary-color;
 
   & h1 {
