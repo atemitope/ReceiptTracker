@@ -16,7 +16,10 @@
     "watch-client": "better-npm-run watch-client",
     "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run start-dev\"",
     "test": "mocha \"src/**/**/*.test.js\" --require test/setup.js",
-    "coverage": "istanbul cover _mocha  \"src/**/**/*.test.js\" --require test/setup.js"
+    "coverage": "istanbul cover _mocha  \"src/**/**/*.test.js\" --require test/setup.js",
+    "pre-lint": "(cd \"./node_modules/\" && pwd)",
+    "preinstall": "npm prune",
+    "postinstall": "rsync pre-commit .git/hooks && chmod 755 .git/hooks/pre-commit"
   },
   "repository": {
     "type": "git",
