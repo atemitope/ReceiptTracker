@@ -1,10 +1,98 @@
-@import 'app';
-@import 'admin';
 
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$no-border-radius: 0px !important;
+
 
 body {
+  .navbar {
+    border-radius: $no-border-radius;
+    .logo {
+      margin-top: -5px;
+    }
+
+    .brand-name {
+      margin-top: 3px;
+    }
+  }
+
+  .btn {
+    border-radius: 0px;
+    }
+
+  .app {
+      margin: 0 100px !important;
+      .app-heading {
+        font-size: 20px !important;
+      }
+
+      .search {
+        float: right;
+        width: 500px !important;
+      }
+
+      .receipt-summary {
+        width: 50px;
+        .summaries {
+          background: #337ab7;
+        }
+      }
+
+      .form-control {
+        border-radius: $no-border-radius;
+      }
+
+      .modal-content {
+        border-radius: $no-border-radius;
+        .modal-footer, .modal-body {
+          text-align: center;
+        }
+        .confirmation {
+          font-size: 150px;
+          color: green;
+        }
+      }
+
+      .table {
+        tbody > tr > .filter {
+          background: #c0c0c0;
+          padding: 0;
+        }
+        .refunded {
+          font-style: italic;
+          color: #0cb86a;
+        }
+        .pending {
+          @extend .refunded;
+          color: #b03e3e;
+        }
+        .activity {
+          @extend .refunded;
+          color: #63b6f6;
+        }
+        .cell-table-left {
+          width: 75%;
+          background: #f5f5f5;
+        }
+        .cell-table-right {
+          @extend .cell-table-left;
+          width: 25%;
+          height: auto;
+        }
+        .fellow-details th {
+          background: #d8d8d8;
+        }
+        .table-hover > tbody > tr:hover {
+          background: #4479c9;
+        }
+      }
+
+      .glyphicon-triangle-left {
+        margin-right: 0.3em;
+        color: #4479c9;
+      }
+  }
+
   font: 130% $font-stack;
   color: $primary-color;
 
