@@ -1,4 +1,4 @@
-import superagent from 'superagent';
+import superagent from 'superagent'
 import config from '../config';
 
 const methods = ['get', 'post', 'put', 'patch', 'del'];
@@ -39,6 +39,6 @@ export default class ApiClient {
    * This empty method is kept here to prevent that bug. naturally it's not neccessary
    */
   empty() {
-    
+
   }
 }
