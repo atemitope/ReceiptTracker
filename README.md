@@ -12,6 +12,7 @@ This home repository of reciept tracker.
 
 ###Contributing
 1. clone the repository
+1. make sure you have the latest version of node installed precisesly 6.3.1
 1. npm install
 2. npm i -g eslint
 3. npm i -g stylelint
@@ -32,26 +33,26 @@ We are basically using two approach to the style guide for different technologie
 ###Folder Structure
 This project folder structure is by component bases
 All the source files are in the src folder
-##components
+####components
   - All component Should have its own folder. The should have there assets(images, scss) and should containt it's specs as shown in the bare bone of the app.
   - Each component must be atleast 90% tested.
 
-##containers
+####containers
 (Use cases for different pages)
-    - Same for the components The should have there assets and should contain it's own specs
-##helpers
+  - Same for the components The should have there assets and should contain it's own specs
+####helpers
 (Utility functions that should be used throughout the app. This might consist of higher order components and libraries)
-##Styles
+####Styles
 (The home to your scss styles. Please use the given variables and mixins for consistency)
-##Theme
+####Theme
 (Bootstrap theme nothing much here)
-##routes
+####routes
 (For serving different pages of the app. Most probably will be containing the components to the app)
-##server.js
+####server.js
 (This serves the route directory to the express backend of the project)
-##client.js
+####client.js
 (This is the entry point for the server)
-##redux
+####redux
 (This is the home of your reducers and stores and middleware)
 
 
