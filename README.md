@@ -26,8 +26,8 @@ This home repository of reciept tracker.
 
 ##StyleGuide
 We are basically using two approach to the style guide for different technologies being used.
-1. [SCSS Style guide](CssContributing.md)
-2. [AirBnb React Style guide](https://github.com/airbnb/javascript/tree/master/react)
+  - [SCSS Style guide](CssContributing.md)
+  - [AirBnb React Style guide](https://github.com/airbnb/javascript/tree/master/react)
 
 
 ##Folder Structure
