@@ -38,22 +38,29 @@ All the source files are in the src folder
   - Each component must be atleast 90% tested.
 
 ###containers
-(Use cases for different pages)
+  Use cases for different pages
   - Same for the components The should have there assets and should contain it's own specs
+
 ###helpers
-(Utility functions that should be used throughout the app. This might consist of higher order components and libraries)
+Utility functions that should be used throughout the app. This might consist of higher order components and libraries
+
 ###Styles
-(The home to your scss styles. Please use the given variables and mixins for consistency)
+The home to your scss styles. Please use the given variables and mixins for consistency
+
 ###Theme
-(Bootstrap theme nothing much here)
+Bootstrap theme nothing much here
+
 ###routes
-(For serving different pages of the app. Most probably will be containing the components to the app)
+For serving different pages of the app. Most probably will be containing the components to the app
+
 ###server.js
-(This serves the route directory to the express backend of the project)
+This serves the route directory to the express backend of the project
+
 ###client.js
-(This is the entry point for the server)
+This is the entry point for the server
+
 ###redux
-(This is the home of your reducers and stores and middleware)
+This is the home of your reducers and stores and middleware
 
 
 
