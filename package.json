@@ -8,7 +8,7 @@
     "start-prod": "better-npm-run start-prod",
     "start-prod-api": "better-npm-run start-prod-api",
     "build": "better-npm-run build",
-    "postinstall": "npm run build",
+    "postinstall": "npm run build && rsync pre-commit .git/hooks && chmod 755 .git/hooks/pre-commit",
     "eslint": "eslint -c .eslintrc src",
     "stylelint": "stylelint --config .csslintrc \"src/**/*.scss\"",
     "lint": "npm run eslint && npm run stylelint",
