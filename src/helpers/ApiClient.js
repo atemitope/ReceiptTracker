@@ -39,6 +39,6 @@ export default class ApiClient {
    * This empty method is kept here to prevent that bug. naturally it's not neccessary
    */
   empty() {
-    
+
   }
 }
